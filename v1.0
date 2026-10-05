@@ -1,0 +1,8 @@
+# Event Management System - Version 1.0
+# Feature: create and register for events
+
+def create_event(event_name, date):
+    print("Event", event_name, "created on", date)
+
+def register_attendee(event_name, attendee_name):
+    print(attendee_name, "registered for", event_name)
