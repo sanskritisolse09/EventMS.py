@@ -1,0 +1,13 @@
+# Event Management System - Version 1.1
+# Features: create events, register attendees, ticket price calculation
+
+def create_event(event_name, date):
+    print("Event", event_name, "created on", date)
+
+def register_attendee(event_name, attendee_name):
+    print(attendee_name, "registered for", event_name)
+
+def calculate_ticket_price(quantity, price=500):
+    total = quantity * price
+    print("Total ticket price = Rs.", total)
+    return total
