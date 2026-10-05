@@ -1,5 +1,7 @@
-# Event Management System - Version 1.1
-# Features: create events, register attendees, ticket price calculation
+# Event Management System - Version 2.0
+# Features: event creation, registration, ticket calculation, event search
+
+events = ["Tech Conference", "Music Festival", "Sports Meet"]
 
 def create_event(event_name, date):
     print("Event", event_name, "created on", date)
@@ -11,3 +13,10 @@ def calculate_ticket_price(quantity, price=500):
     total = quantity * price
     print("Total ticket price = Rs.", total)
     return total
+
+def search_event(event_name):
+    if event_name in events:
+        print(event_name, "is available")
+    else:
+        print(event_name, "not found")
+
